@@ -1,0 +1,117 @@
+/* display flex for body to get the card-container to center */
+body {
+  background-color: #1e1e1e;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* display flex here for getting the card itself to center */
+#card-container {
+  background-color: hsl(0, 0%, 8%);
+  width: 375px;
+  height: 812px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* display flex here to align and center the content since it is all centered.
+then can use margin and padding for vertical alignment */
+#card {
+  background-color: hsl(0, 0%, 12%);
+  width: 327px;
+  height: 579px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+h2 {
+  font-size: 14px;
+  color: hsl(75, 94%, 57%);
+  font-weight: 600;
+  margin-top: 0px;
+}
+
+#card p {
+  font-size: 13px;
+}
+
+#photo img {
+  border-radius: 50%;
+  width: 88px;
+  height: 88px;
+  margin-top: 24px;
+}
+
+.social-links button {
+  width: 279px;
+  height: 45px;
+  background-color: hsl(0, 0%, 20%);
+  border-radius: 8px;
+  border-style: none;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  color: #fff;
+  margin-top: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links button:hover {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 20%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* When the browser is at least 768px and above */
+@media screen and (min-width: 768px) {
+  #card-container {
+    background-color: hsl(0, 0%, 8%);
+    width: 768px;
+    height: 1024px;
+  }
+
+  #card {
+    width: 456px;
+    height: 611px;
+  }
+}
+
+/* When the browser is at least 1440px and above */
+@media screen and (min-width: 1440px) {
+  #card-container {
+    background-color: hsl(0, 0%, 8%);
+    width: 1440px;
+    height: 960px;
+  }
+
+  #card {
+    width: 384px;
+    height: 611px;
+  }
+}
